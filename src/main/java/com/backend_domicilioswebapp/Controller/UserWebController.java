@@ -31,7 +31,7 @@ public class UserWebController {
         UserWebDTO userDTO = new UserWebDTO();
         userDTO.setUsuario(userLoginDTO.getUsuario());
         userDTO.setPassword(userLoginDTO.getPassword());
-        var respuesta = this.userWebService.validateUser(IUserWebMapper.INSTANCE.toUserWeb(userDTO));
+        Boolean respuesta = this.userWebService.validateUser(IUserWebMapper.INSTANCE.toUserWeb(userDTO));
 
         if (respuesta == null || !respuesta) {
             return new ResponseEntity<>(false, HttpStatus.CONFLICT);

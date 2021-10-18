@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Clase para la gestion de usuarios...
  * @author Luis Cruz
@@ -23,7 +25,7 @@ public class UserWebServiceImpl implements IUserWebService {
      **/
 
     public Boolean validateUser(UserWeb aUserWeb){
-        var usuarioWebList = this.userWebRepository.findUsuarioWeb(aUserWeb.getUsuario(), aUserWeb.getPassword());
+        List<UserWeb> usuarioWebList = this.userWebRepository.findUsuarioWeb(aUserWeb.getUsuario(), aUserWeb.getPassword());
         if (usuarioWebList != null && !usuarioWebList.isEmpty()) {
             return true;
         }
