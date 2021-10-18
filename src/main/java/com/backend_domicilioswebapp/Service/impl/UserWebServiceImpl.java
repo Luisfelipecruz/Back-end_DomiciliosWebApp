@@ -3,7 +3,6 @@ package com.backend_domicilioswebapp.Service.impl;
 import com.backend_domicilioswebapp.Model.UserWeb;
 import com.backend_domicilioswebapp.Repository.IUserWebRepository;
 import com.backend_domicilioswebapp.Service.interfaces.IUserWebService;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

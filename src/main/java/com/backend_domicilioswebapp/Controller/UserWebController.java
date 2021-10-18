@@ -6,7 +6,6 @@ import com.backend_domicilioswebapp.Mapper.IUserWebMapper;
 import com.backend_domicilioswebapp.Model.UserWeb;
 import com.backend_domicilioswebapp.Service.interfaces.IUserWebService;
 
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
